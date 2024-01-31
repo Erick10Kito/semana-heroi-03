@@ -12,7 +12,7 @@ export default function Footer() {
     const minutes = date.getMinutes().toString().padStart(2, '0');
 
     return (
-        <div className="fixed items-center bottom-0 bg-black py-6 w-full">
+        <div className="items-center bottom-0 bg-black py-6 w-full flex-1">
             <Container>
                 <div className="grid grid-cols-3">
                     <div className="flex items-center">
