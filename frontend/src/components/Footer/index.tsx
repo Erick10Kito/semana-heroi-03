@@ -12,7 +12,7 @@ export default function Footer() {
     const minutes = date.getMinutes().toString().padStart(2, '0');
 
     return (
-        <div className="fixed bottom-0 bg-black py-6 w-full">
+        <div className="fixed items-center bottom-0 bg-black py-6 w-full">
             <Container>
                 <div className="grid grid-cols-3">
                     <div className="flex items-center">
@@ -20,9 +20,9 @@ export default function Footer() {
                     </div>
                     <div className="flex space-x-6 justify-center">
                         {isMuted ? (
-                            <NoMic className="w-16 h-10 text-white p-2 bg-red-500 rounded-md cursor-pointer" onClick={() => setIsMuted(!isMuted)} />
+                            <NoMic className="w-16 h-12 text-white p-2 bg-red-500 rounded-md cursor-pointer" onClick={() => setIsMuted(!isMuted)} />
                         ) : (
-                            <Mic className="w-16 h-10 text-white p-2 bg-gray-950 rounded-md cursor-pointer" onClick={() => setIsMuted(!isMuted)} />
+                            <Mic className="w-16 h-12 text-white p-2 bg-gray-950 rounded-md cursor-pointer" onClick={() => setIsMuted(!isMuted)} />
                         )}
 
                         {isCameraOff ? (
@@ -49,7 +49,7 @@ export default function Footer() {
                             />
                         )}
 
-                        <Phone className="w-16 h-10 text-white p-2 bg-primary rounded-md cursor-pointer hover:bg-red-500" />
+                        <Phone className="w-16 h-12 text-white p-2 bg-primary rounded-md cursor-pointer hover:bg-red-500" />
                     </div>
                 </div>
             </Container>
