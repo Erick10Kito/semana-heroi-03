@@ -40,9 +40,9 @@ export default function Room({ params }: { params: { id: string } }) {
 
       <div className="flex h-full">
         <div className="md:w-[85%] w-full m-3 ">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-8 h-full">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-8 h-full overflow-y-scroll">
             <div className="bg-gray-950 w-full rounded-md h-full p-2 relative ">
-              <video className="h-full w-full" autoPlay playsInline ref={localStream} />
+              <video className="h-full w-full" autoPlay playsInline ref={localStream}  />
               <span className="absolute bottom-3">Alexia Kattah</span>
             </div>
 
